@@ -44,13 +44,3 @@ The goal is to predict the final sale price of homes based on 80+ features descr
 - **Tools**: Jupyter Notebook, Git, Kaggle  
 
 ---
-
-## 📂 Repository Structure
-
-- **data/** → Dataset files (not included, download from Kaggle)
-- **notebooks/** → Jupyter notebooks for EDA, feature engineering, and modeling
-- **src/** → Python scripts (data preprocessing, feature engineering, model training)
-- **submission/** → CSV submission files
-- **requirements.txt** → List of dependencies
-- **README.md** → Project documentation
-- **.gitignore** → Ignore large files and cache
