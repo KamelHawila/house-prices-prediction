@@ -1,57 +1,76 @@
-# 🏡 House Prices Prediction – Kaggle Competition
+🏡 House Prices Prediction – Kaggle Competition
 
-This project is my solution to the [Kaggle House Prices: Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
-competition.  
-The goal is to predict the final sale price of homes based on 80+ features describing different aspects of residential houses.
+This project is my solution to the Kaggle House Prices: Advanced Regression Techniques competition.
+The goal is to predict the final sale price of homes based on 80+ features describing various aspects of residential properties.
 
----
+🚀 Results
 
-## 🚀 Results
-- Achieved **Top 10% (Rank 449 / 4244)** on the Kaggle leaderboard.  
-- Built an end-to-end regression pipeline including **data cleaning, feature engineering, model training, and evaluation**.
+🏆 Achieved Top 10% (Rank 449 / 4244) on the Kaggle leaderboard
 
----
+🧠 Built an end-to-end regression pipeline for data cleaning, feature engineering, model training, and evaluation
 
-## 📊 Project Overview
-### Steps I followed:
-1. **Exploratory Data Analysis (EDA)**  
-   - Visualized distributions, correlations, and missing values.  
-   - Identified outliers and skewed features.
+📊 Project Overview
+1️⃣ Exploratory Data Analysis (EDA)
 
-2. **Data Cleaning & Preprocessing**  
-   - Handled missing values (imputation).  
-   - Encoded categorical variables (OneHot, Label Encoding).  
-   - Normalized numerical features.  
+Visualized feature distributions, correlations, and missing values
 
-3. **Feature Engineering**  
-   - Created domain-inspired features (e.g., `TotalSF`, `TotalBathrooms`, `PropertyAge`).  
-   - Generated interaction terms and boolean flags.  
+Identified outliers and handled skewed numerical features
 
-4. **Modeling**  
-   - Trained multiple models: **Random Forest, XGBoost, CatBoost**.  
-   - Used **cross-validation** with RMSE metric.  
-   - Performed **hyperparameter tuning** with RandomizedSearchCV.  
+2️⃣ Data Cleaning & Preprocessing
 
-5. **Ensembling**  
-   - Combined predictions (stacking/blending).  
-   - Submitted best-performing model.
+Handled missing values using imputation
 
----
+Encoded categorical variables with One-Hot and Label Encoding
 
-## 🛠️ Tech Stack
-- **Languages**: Python  
-- **Libraries**: scikit-learn, pandas, numpy, matplotlib, seaborn, plotly, XGBoost, CatBoost  
-- **Tools**: Jupyter Notebook, Git, Kaggle  
+Scaled numerical features for better model performance
 
----
+3️⃣ Feature Engineering
 
-## 📂 Repository Structure
+Created new features like TotalSF, TotalBathrooms, and PropertyAge
 
-- **data/** → Dataset files (not included, download from Kaggle)
-- **notebooks/** → Jupyter notebooks for EDA, feature engineering, and modeling
-- **src/** → Python scripts (data preprocessing, feature engineering, model training)
-- **submission/** → CSV submission files
-- **requirements.txt** → List of dependencies
-- **README.md** → Project documentation
-- **.gitignore** → Ignore large files and cache
+Generated interaction terms and boolean flags for improved learning
 
+4️⃣ Modeling
+
+Trained multiple algorithms: RandomForest, XGBoost, CatBoost
+
+Evaluated models using cross-validation (RMSE)
+
+Applied RandomizedSearchCV for hyperparameter tuning
+
+5️⃣ Ensembling
+
+Combined top models using stacking/blending
+
+Selected and submitted the best performing ensemble
+
+🛠️ Tech Stack
+
+Languages: Python
+Libraries: scikit-learn, pandas, numpy, matplotlib, seaborn, plotly, XGBoost, CatBoost
+Tools: Jupyter Notebook, Git, Kaggle
+
+📂 Repository Structure
+house-prices-prediction/
+│
+├── data/                 # (Not included – download from Kaggle)
+├── notebooks/            # Jupyter notebooks for EDA, feature engineering, modeling
+├── src/                  # Python scripts (preprocessing, feature engineering, model training)
+├── submission/           # CSV submission files
+├── requirements.txt      # Dependencies
+├── README.md             # Project documentation
+└── .gitignore            # Ignore data & cache files
+
+📦 Installation
+# Clone this repository
+git clone https://github.com/<your-username>/house-prices-prediction.git
+cd house-prices-prediction
+
+# Install dependencies
+pip install -r requirements.txt
+
+🧮 Usage
+
+Run the notebook or scripts to train and evaluate the model:
+
+jupyter notebook notebooks/Project.ipynb
